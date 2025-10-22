@@ -1,0 +1,71 @@
+.footer {
+  background: darken($color-bg, 5%);
+  color: $color-gray;
+  padding: $spacing-unit * 3;
+  display: grid;
+  gap: $spacing-unit * 2;
+  text-align: center;
+
+  &__min {
+    h3 {
+      color: $color-primary;
+      margin-bottom: $spacing-unit / 2;
+    }
+    p {
+      font-size: 0.9rem;
+      color: lighten($color-text, 20%);
+    }
+  }
+
+  &__nav {
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: $spacing-unit / 2;
+
+      li a {
+        color: $color-gray;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: $color-accent;
+        }
+      }
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    gap: $spacing-unit * 2;
+    margin-top: $spacing-unit * 2;
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: $color-gray;
+      transition: transform 0.3s ease, background 0.3s ease;
+      img {
+        width: 25px;
+        height: 25px;
+        object-fit: contain;
+      }
+      &:hover {
+        background: $color-accent;
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__copy {
+    margin-top: $spacing-unit * 2;
+    font-size: 0.8rem;
+    color: lighten($color-text, 30%);
+  }
+}

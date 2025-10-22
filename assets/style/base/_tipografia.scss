@@ -1,0 +1,38 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-main;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: $spacing-unit;
+  color: $color-text;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-bottom: $spacing-unit;
+  font-size: 1rem;
+  color: lighten($color-text, 10%);
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $color-accent;
+  }
+}

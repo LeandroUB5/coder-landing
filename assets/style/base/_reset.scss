@@ -3,3 +3,17 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: $color-bg;
+  color: $color-text;
+  font-family: $font-main;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}

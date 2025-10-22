@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/style/style.css" />
+    <link rel="stylesheet" href="./assets/style/css/main.css" />
     <title>🎮 Minimal Games</title>
   </head>
   <body>
-    <header>
+    <header class="header" id="header">
       <img
         class="logo"
         src="./assets/img/logo/logo minimalista que.png"
@@ -23,8 +23,8 @@
       </nav>
     </header>
     <main>
-      <section class="hero">
-        <div>
+      <section class="hero" id="hero">
+        <div class="hero_inf">
           <h1>Explora el mundo Gamer</h1>
           <p>
             Aquí vas a encontrar lo mejor del universo de los videojuegos:
@@ -32,44 +32,216 @@
             partida al máximo. Sumate a la comunidad y llevá tu pasión gamer a
             otro nivel.
           </p>
+          <a href="#catalogo">Ver catálogo:</a>
         </div>
-        <img src="#" alt="#" />
+        <img
+          src="./assets/img/hero/sharad-kachhi-hluitBPPJBI-unsplash.jpg"
+          alt="#"
+        />
       </section>
-      <section class="catalogo">
-        <h2>Catalogo</h2>
+      <section class="catalogo" id="catalogo">
+        <h2>Catálogo</h2>
         <div class="grid">
-          <div class="card">Juego1</div>
-          <div class="card">juego2</div>
-          <div class="card">juego3</div>
-          <div class="card">juego4</div>
+          <div class="card">
+            <img src="./assets/img/catalogo/valorant.jpg" alt="juego accion" />
+            <h3>Valorant</h3>
+            <p class="card_genero">Accion</p>
+            <p class="card_desc">
+              Shooter táctico 5v5 donde la precisión con armas se combina con
+              habilidades únicas de agentes en partidas intensas y estratégicas.
+            </p>
+            <a href="#" class="btn">Ver más</a>
+          </div>
+          <div class="card">
+            <img src="./assets/img/catalogo/godofwar.jpg" alt="Aventura" />
+            <h3>God of war Ragnarok</h3>
+            <p class="card_genero">Aventura</p>
+            <p class="card_desc">
+              Kratos y Atreus se embarcan en un viaje épico a través de los
+              Nueve Reinos en busca de respuestas mientras el Ragnarök se
+              aproxima.
+            </p>
+            <a href="#" class="btn">Ver más</a>
+          </div>
+          <div class="card">
+            <img
+              src="./assets/img/catalogo/leagueoflegend.jpg"
+              alt="Estrategia"
+            />
+            <h3>League of Legends</h3>
+            <p class="card_genero">Estrategia</p>
+            <p class="card_desc">
+              El MOBA más influyente del mundo, con más de 160 campeones y
+              batallas 5v5 en la Grieta del Invocador, donde estrategia y
+              reflejos deciden la victoria.
+            </p>
+            <a href="#" class="btn">Ver más</a>
+          </div>
+          <div class="card">
+            <img src="./assets/img/catalogo/eldenring.jpg" alt="RPG" />
+            <h3>Elden Ring</h3>
+            <p class="card_genero">RPG</p>
+            <p class="card_desc">
+              Un RPG de acción en mundo abierto que lleva la fórmula Souls a
+              nuevas alturas: exploración libre, jefes colosales y un mundo
+              oscuro.
+            </p>
+            <a href="#" class="btn">Ver más</a>
+          </div>
         </div>
       </section>
-      <section class="ranking">
-        <h2>Top Juegos</h2>
-        <div>Juego A ⭐⭐⭐⭐⭐</div>
-        <div>Juego B ⭐⭐⭐⭐</div>
-        <div>Juego C ⭐⭐⭐</div>
+      <section class="ranking" id="ranking">
+        <h2>Top juegos</h2>
+        <ol class="ranking__list">
+          <li class="ranking__item">
+            <img src="./assets/img/ranking/residentevil.jpg" alt="Accion" />
+            <div class="ranking__info">
+              <h3>Resident evil IV</h3>
+              <p class="genre">Accion</p>
+              <div class="stars">⭐⭐⭐⭐⭐</div>
+              <p class="desc">
+                Un clásico moderno con jugabilidad intensa y visual minimalista.
+              </p>
+            </div>
+          </li>
+          <li class="ranking__item">
+            <img src="./assets/img/ranking/thelast.jpg" alt="Aventura" />
+            <div class="ranking__info">
+              <h3>The last of us</h3>
+              <p class="genre">Aventura</p>
+              <div class="stars">⭐⭐⭐⭐</div>
+              <p class="desc">
+                Un clásico moderno con jugabilidad intensa y visual minimalista.
+              </p>
+            </div>
+          </li>
+          <li class="ranking__item">
+            <img src="./assets/img/ranking/ageofempire.jpg" alt="Estrategia" />
+            <div class="ranking__info">
+              <h3>Age of empire II</h3>
+              <p class="genre">Estrategia</p>
+              <div class="stars">⭐⭐⭐</div>
+              <p class="desc">
+                Un clásico moderno con jugabilidad intensa y visual minimalista.
+              </p>
+            </div>
+          </li>
+        </ol>
       </section>
-      <section class="noticias">
+      <section class="noticias" id="noticias">
         <h2>Noticias</h2>
-        <article class="post">
-          <h3>Titulo de noticia</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, magni.
-          </p>
-        </article>
+        <div class="grid">
+          <article class="post">
+            <img src="./assets/img/noticia/sevendays.jpg" alt="7 days" />
+            <div class="post__content">
+              <h3>Nueva actualización de 7 days to die</h3>
+              <p class="date">30 jun 2025</p>
+              <p class="excerpt">
+                Esta actualización importante introduce un sistema de progresión
+                por biomas, un sistema meteorológico más dinámico con tormentas
+                extremas.
+              </p>
+              <a href="#" class="btn">Leer más</a>
+            </div>
+          </article>
+
+          <article class="post">
+            <img src="./assets/img/noticia/csgo.jpg" alt="Cs go" />
+            <div class="post__content">
+              <h3>Concurso de eSports anunciado</h3>
+              <p class="date">8 jul 2025</p>
+              <p class="excerpt">
+                Se abre la inscripción para el torneo internacional con premios
+                millonarios.
+              </p>
+              <a href="#" class="btn">Leer más</a>
+            </div>
+          </article>
+
+          <article class="post">
+            <img src="./assets/img/noticia/pathof.jpg" alt="path of exile II" />
+            <div class="post__content">
+              <h3>Path of Exile anuncia grandes cambios para el 'endgame'</h3>
+              <p class="date">15 Oct 2025</p>
+              <p class="excerpt">
+                El evento Legado de Phrecia tendrá un nuevo sistema que
+                sustituirá el Árbol de habilidades del Atlas.
+              </p>
+              <a href="#" class="btn">Leer más</a>
+            </div>
+          </article>
+        </div>
       </section>
-      <section class="contacto">
+      <section class="contacto" id="contacto">
         <h2>Contacto</h2>
-        <form>
-          <input type="text" placeholder="Tu nombre" />
-          <input type="email" placeholder="Tu email" />
+        <form class="form">
+          <div class="form__group">
+            <label for="name">Nombre</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Tu nombre"
+              required
+            />
+          </div>
+
+          <div class="form__group">
+            <label for="email">Correo electrónico</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="tu@email.com"
+              required
+            />
+          </div>
+
+          <div class="form__group">
+            <label for="message">Mensaje</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Escribí tu mensaje..."
+              required
+            ></textarea>
+          </div>
+
           <button type="submit" class="btn">Enviar</button>
         </form>
       </section>
     </main>
     <footer class="footer">
-      <p>© 2025 Minimal Games</p>
+      <div class="footer__min">
+        <h3>🎮 Minimal Games</h3>
+        <p>Tu portal gamer minimalista</p>
+      </div>
+
+      <nav class="footer__nav">
+        <ul>
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#ranking">Ranking</a></li>
+          <li><a href="#noticias">Noticias</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__social">
+        <a href="#"
+          ><img src="./assets/img/footer/instagram.png" alt="Instagram"
+        /></a>
+        <a href="#"
+          ><img src="./assets/img/footer/twitter.png" alt="twitter"
+        /></a>
+        <a href="#"
+          ><img src="./assets/img/footer/facebook.png" alt="facebook"
+        /></a>
+      </div>
+
+      <div class="footer__copy">
+        <p>&copy; 2025 Minimal Games. Todos los derechos reservados.</p>
+      </div>
     </footer>
   </body>
 </html>
